@@ -17,15 +17,15 @@ EGO DEATH:
 -->
 <!--Stop Google:-->
 <META NAME="robots" CONTENT="noindex,nofollow">
+<!--Get the Ace code editor, which is really the heart of this software, from CDN on Cloudflare and is documented at https://ace.c9.io/ and is BSD licensed-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
-<title>PHP Editor replicator</title>
+<title>Ace Code Editor</title>
 </head>
 <body>
 <div id = "linkscroll">
     <a href = "text2php.php">text2php.php</a>
     <a href = "index.php">index.php</a>
     <a href = "copy.php">copy.php</a>
-    <a href = "linker.php">linker.php</a>
     <a href = "aligner.php">aligner.php</a>
     <a href = "imagefeed.php">imagefeed.php</a>
     <a href = "memefeed.php">memefeed.php</a>

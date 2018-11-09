@@ -6,7 +6,7 @@
                 <img src = "mapicons/editor.svg"/>
             </a>
         </td>
-        <td style = "display:none">
+        <td>
             <a href = "externalimagefeed.php" >
                 <img src = "mapicons/externalimagefeed.svg"/>
             </a>

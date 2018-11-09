@@ -31,13 +31,9 @@
 	{
 		"path":"json",
 		"files":[
-			"currentjson.txt",
 			"dna.txt",
-			"factory.txt",
 			"imgurls.txt",
-			"links.txt",
 			"listoflists.txt",
-			"map.txt",
 			"meme.txt"
 		]
 	},
@@ -72,23 +68,5 @@
 			"upload.svg",
 			"uploader.svg"
 		]
-	},
-    {
-        "path":"symbol",
-        "files":[
-            "replicator.php"
-        ]
-    },
-    {
-        "path":"curve",
-        "files":[
-            "replicator.php"
-        ]
-    },
-    {
-        "path":"scroll",
-        "files":[
-            "replicator.php"
-        ]
-    }
+	}
 ]
