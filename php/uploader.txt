@@ -2,7 +2,7 @@
 <html  lang="en">
 <head>
 <meta charset="utf-8"> 
-<title>Linker</title>
+<title>Uploader</title>
 
 <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAP//AP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIiIiIgERAAERAAERABEQABEQABEAAREAAREAASIiIiIiIiIiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIiIiIiIiIiAREAAREAAREAERAAERAAEQABEQABEQABIiIiIiIiIiL//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAC++wAAnnkAAI44AACeeQAAvvsAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
 
@@ -19,7 +19,7 @@ PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 $files = scandir(getcwd()."/uploadimages");
 $listtext = "";
 foreach($files as $value){
-    if($value != "." && $value != ".."){
+    if($value != "." && $value != ".." && substr($value,-4) != ".txt"){
         $listtext .= $value.",";
     }
 }

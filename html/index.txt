@@ -12,6 +12,10 @@
             </a>
         </td>
         <td>
+            <a href = "uploader.php" >
+                <img src = "mapicons/uploader.svg"/>
+            </a>
+        </td>
         <td>
             <a href = "imagefeed.php">
                 <img src = "mapicons/imagefeed.svg"/>

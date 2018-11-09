@@ -6,8 +6,8 @@
     $baseurl = explode("json",$url)[0];
 
     mkdir("memes");
+    mkdir("uploadimages");
     
-
     //sources
 
     foreach($dna as $dirs){
