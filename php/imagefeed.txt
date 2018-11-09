@@ -19,7 +19,7 @@ PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 
 ?></div>
 <a href = "index.php" style = "position:absolute;left:10px;top:10px">
-    <img src  = "mapicons/mapfactory.svg" style = "width:50px"/>
+    <img src  = "mapicons/memefactory.svg" style = "width:50px"/>
 </a>
 
 <div id = "tablebox">

@@ -47,6 +47,7 @@ EGO DEATH:
 
     <div class = "php file">php/imagefeed.txt</div>
     <div class = "php file">php/linker.txt</div>
+    <div class = "php file">php/combiner.txt</div>
     <div class = "php file">php/aligner.txt</div>
     <div class = "php file">php/mapeditor.txt</div>
     <div class = "php file">php/map2link.txt</div>
