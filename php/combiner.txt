@@ -31,6 +31,19 @@ PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
     echo file_get_contents("json/imgurls.txt");
     
 ?></div>
+<div id = "listoflists" style = "display:none"><?php
+
+    $listoflists = json_decode(file_get_contents("json/listoflists.txt"));
+    
+    foreach($listoflists as $listurl){
+        $baseurl = explode("list.txt",$listurl)[0];
+        $filelist = explode(",",file_get_contents($listurl));
+        foreach($filelist as $filename){
+            echo $baseurl.$filename.",";
+        }
+    }
+    
+?></div>
 
 <a id = "factorylink" href = "index.php" style = "position:absolute;left:10px;top:10px"><img src = "mapicons/memefactory.svg" style = "width:50px"></a>
 
@@ -50,6 +63,14 @@ PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
     
 
     imgurls = JSON.parse(document.getElementById("imgurls").innerHTML);
+
+    extimages = document.getElementById("listoflists").innerHTML.split(",");
+    for(var index = 0;index < extimages.length;index++){
+        if(extimages[index].length > 1){
+            imgurls.push(extimages[index]);
+        }
+    }
+    
     meme = JSON.parse(document.getElementById("datadiv").innerHTML);
 
     for(var index = 0;index < meme.length;index++){

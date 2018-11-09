@@ -3,6 +3,7 @@
 		"path":"php",
 		"files":[
 			"aligner.txt",
+			"combiner.txt",
 			"copy.txt",
 			"dnagenerator.txt",
 			"editor.txt",
@@ -14,6 +15,7 @@
 			"linkfeed.txt",
 			"map2link.txt",
 			"mapeditor.txt",
+			"memefeed.txt",
 			"replicator.txt",
 			"text2php.txt",
 			"upload.txt",
@@ -35,7 +37,8 @@
 			"imgurls.txt",
 			"links.txt",
 			"listoflists.txt",
-			"map.txt"
+			"map.txt",
+			"meme.txt"
 		]
 	},
 	{
@@ -47,9 +50,11 @@
 			"copy.svg",
 			"curve.svg",
 			"deletelink.svg",
+			"deletememe.svg",
 			"deletex.svg",
 			"downarrow.svg",
 			"editor.svg",
+			"externalimagefeed.svg",
 			"fwd.svg",
 			"geometron.svg",
 			"gobutton.svg",
@@ -59,32 +64,13 @@
 			"map2link.svg",
 			"mapeditor.svg",
 			"mapfactory.svg",
+			"memefactory.svg",
+			"memefeed.svg",
+			"memesave.svg",
 			"scroll.svg",
 			"uparrow.svg",
 			"upload.svg",
 			"uploader.svg"
-		]
-	},
-	{
-		"path":"icons",
-		"files":[
-			"aligner.svg",
-			"back.svg",
-			"combiner.svg",
-			"deletelink.svg",
-			"deletex.svg",
-			"downarrow.svg",
-			"editor.svg",
-			"fwd.svg",
-			"gobutton.svg",
-			"image.svg",
-			"linker.svg",
-			"linkfeed.svg",
-			"map2link.svg",
-			"mapeditor.svg",
-			"mapfactory.svg",
-			"uparrow.svg",
-			"upload.svg"
 		]
 	},
     {

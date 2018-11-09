@@ -6,8 +6,8 @@
                 <img src = "mapicons/editor.svg"/>
             </a>
         </td>
-        <td>
-            <a href = "externalimagefeed.php">
+        <td style = "display:none">
+            <a href = "externalimagefeed.php" >
                 <img src = "mapicons/externalimagefeed.svg"/>
             </a>
         </td>
@@ -83,7 +83,6 @@ meme = JSON.parse(document.getElementById("datadiv").innerHTML);
     if(pathset){
         document.getElementById("linkerlink").href += "?path=" + path; 
         document.getElementById("alignerlink").href += "?path=" + path; 
-        document.getElementById("mapeditorlink").href += "?path=" + path; 
     }
     
     W = innerWidth;

@@ -2,7 +2,7 @@
 <html  lang="en">
 <head>
 <meta charset="utf-8"> 
-<title>Copy Map Factory</title>
+<title>Copy Meme Factory</title>
 
 <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAP//AP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIiIiIgERAAERAAERABEQABEQABEAAREAAREAASIiIiIiIiIiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIiIiIiIiIiAREAAREAAREAERAAERAAEQABEQABEQABIiIiIiIiIiL//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAC++wAAnnkAAI44AACeeQAAvvsAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
 
@@ -18,7 +18,7 @@ PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 
 <div id = "mainscroll">
 
-<h2>How to make your own Map Factory</h2>
+<h2>How to make your own Meme Factory</h2>
 
 <p>To create your own instance of this software you need to create a free web hosting account, upload one program, then run that program and the code will all be copied over.  Then you can custommize it as you see fit, and show others how to replicate it.</p>
 
