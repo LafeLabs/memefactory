@@ -56,7 +56,7 @@ EGO DEATH:
     <div class = "php file">php/copy.txt</div>
 
     <div class = "json file">json/dna.txt</div>
-    <div class = "json file">json/map.txt</div>
+    <div class = "json file">json/meme.txt</div>
     <div class = "json file">json/listoflists.txt</div>
     <div class = "json file">json/imgurls.txt</div>
 

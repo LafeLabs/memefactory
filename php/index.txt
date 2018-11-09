@@ -2,18 +2,14 @@
 <html  lang="en">
 <head>
 <meta charset="utf-8"> 
-<title>Map Factory</title>
+<title>Meme Factory</title>
 
 <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAP//AP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIiIiIgERAAERAAERABEQABEQABEAAREAAREAASIiIiIiIiIiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIiIiIiIiIiAREAAREAAREAERAAERAAEQABEQABEQABIiIiIiIiIiL//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAC++wAAnnkAAI44AACeeQAAvvsAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
 
 <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 
-note that "map" has a broader meaning than just geographic maps like google maps or yahoo or whatever, the wikipedia definition starts like this:
-
-"A map is a symbolic depiction emphasizing relationships between elements of some space, such as objects, regions, or themes."
-
-This is the goal of this project, to make a factory which creates maps in this generalized definition.  
+Graphical Meme Factory  
 
 _9_LAWS_OF_GEOMETRON_:
 
@@ -72,7 +68,7 @@ EGO DEATH:
         echo file_get_contents($_GET['url']);
     }
     if(!isset($_GET['url']) && !isset($_GET['path'])){
-        echo file_get_contents("json/map.txt");        
+        echo file_get_contents("json/meme.txt");        
     }
 ?></div>
 <?php

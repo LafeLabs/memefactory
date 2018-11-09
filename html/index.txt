@@ -12,7 +12,7 @@
             </a>
         </td>
         <td>
-            <a id = "linkerlink" href = "linker.php">
+            <a id = "linkerlink" href = "combiner.php">
                 <img src = "mapicons/combiner.svg"/>
             </a>
         </td>
@@ -22,7 +22,7 @@
             </a>
         </td>
         <td>
-            <a href = "map2link.php">
+            <a href = "memefeed.php">
                 <img src = "mapicons/memefeed.svg"/>
             </a>
         </td>
@@ -41,7 +41,8 @@ for(var index = 0;index < linkimages.length;index++){
     linkimages[index].style.width = (innerWidth/16).toString() + "px";
 }
 
-    map = JSON.parse(document.getElementById("datadiv").innerHTML);
+meme = JSON.parse(document.getElementById("datadiv").innerHTML);
+
     url = document.getElementById("urldiv").innerHTML;
     path = document.getElementById("pathdiv").innerHTML;
     if(path.length > 1){
@@ -58,15 +59,15 @@ for(var index = 0;index < linkimages.length;index++){
     }
     
     if(urlset && !pathset){
-        data = encodeURIComponent(JSON.stringify(map,null,"    "));
+        data = encodeURIComponent(JSON.stringify(meme,null,"    "));
         var httpc = new XMLHttpRequest();
         var url = "filesaver.php";
         httpc.open("POST", url, true);
         httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-        httpc.send("data=" + data + "&filename=" + "json/map.txt");//send text to filesaver.php
+        httpc.send("data=" + data + "&filename=" + "json/meme.txt");//send text to filesaver.php
     }
     if(urlset && pathset){
-        data = encodeURIComponent(JSON.stringify(map,null,"    "));
+        data = encodeURIComponent(JSON.stringify(meme,null,"    "));
         var httpc = new XMLHttpRequest();
         var url = "filesaver.php";
         httpc.open("POST", url, true);
@@ -79,23 +80,17 @@ for(var index = 0;index < linkimages.length;index++){
         document.getElementById("mapeditorlink").href += "?path=" + path; 
     }
     
-    for(var index = 0;index < map.length;index++){
+    W = innerWidth;
+    for(var index = 0;index < meme.length;index++){
         var newimg = document.createElement("IMG");
-        var newa = document.createElement("A");
-        newa.className = "linkbox";
-        newa.appendChild(newimg);
-        newa.id = "a" + index.toString();
-        newa.href = map[index].href;
         newimg.id = "i" + index.toString();
-        document.getElementById("page").appendChild(newa);
-        newimg.src = map[index].src;
-        newa.style.left = (map[index].x*innerWidth).toString() + "px";
-        newa.style.top = (map[index].y*innerWidth).toString() + "px";
-        newa.style.width = (map[index].w*innerWidth).toString() + "px";
-        newa.style.transform = "rotate(" + map[index].angle.toString() + "deg)";
-        newimg.onload = function(){
-            this.parentElement.style.height = (this.height).toString() + "px";
-        }
+        newimg.className = "boximg";
+        document.getElementById("page").appendChild(newimg);
+        newimg.src = meme[index].src;
+        newimg.style.left = (meme[index].x*W).toString() + "px";
+        newimg.style.top = (meme[index].y*W).toString() + "px";
+        newimg.style.width = (meme[index].w*W).toString() + "px";
+        newimg.style.transform = "rotate(" + meme[index].angle.toString() + "deg)";
     }
     
 </script>
@@ -104,10 +99,11 @@ for(var index = 0;index < linkimages.length;index++){
     position:absolute;
     left:0px;
     top:0px;
-    z-index:9999999;
+    z-index:99999999;
 }
 #linktable img{
     width:40px;
+    background-color:white;
 }
 #page{
     position:absolute;    
@@ -116,13 +112,10 @@ for(var index = 0;index < linkimages.length;index++){
     right:0px;
     bottom:0px;
 }
-.linkbox{
-    position:absolute;
-}
-.linkbox img{
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:100%;
-}
+ .boximg{
+     position:absolute;
+     z-index:-1;
+ }   
+
+
 </style>

@@ -1,4 +1,6 @@
 [
     "http://lafelabs.org/factory/symbol/svg/svg1539829564.svg",
-    "https://i.imgur.com/5226cet.png"
+    "https://i.imgur.com/5226cet.png",
+    "https://i.imgur.com/83ZTSYr.jpg",
+    "http://actiongeometry.org/symbol/symbols/golden/svg/svg1541636713.svg"
 ]
