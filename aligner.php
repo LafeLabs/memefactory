@@ -29,6 +29,7 @@ PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 ?></div>
 <a id = "factorylink" href = "index.php" style = "position:absolute;left:10px;top:10px;z-index:4"><img src = "mapicons/memefactory.svg" style = "width:50px"></a>
 
+<img id = "savebutton" class = "button" src = "mapicons/memesave.svg" style = "width:80px;position:absolute;right:10px;top:10px;z-index:999999999"/>
 
 <div id = "page"></div>
 <img id = "backbutton" class = "button" src = "mapicons/back.svg"/>
@@ -145,6 +146,19 @@ function savememe(){
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
     httpc.send("data=" + data + "&filename=" + currentFile);//send text to filesaver.php
 }
+
+document.getElementById("savebutton").onclick = function(){
+    timestamp = Math.round(Date.now()/1000).toString();
+    currentFile = "memes/meme" + timestamp + ".txt";   
+    data = encodeURIComponent(JSON.stringify(meme,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data=" + data + "&filename=" + currentFile);//send text to filesaver.php
+
+}
+
 </script>
 <style>
 .bar{
